@@ -1,0 +1,38 @@
+for i in range(3):
+    Username = str(input(' enter your username: '))
+    Password = str(input (' enter your password: '))
+    if Username == "Sankalp" and Password == "Sankalp07":
+        print('Login successful')
+        Book_Status = str(input("Please confirm if you wish to borrow or return book: "))  
+        if Book_status == "borrow":
+            Subject_Book = str(input('Which subject book would you like to borrow: '))
+        if Subject_Book == "Maths":
+            Number_Of_Maths_Books = Number_Of_Maths_Books -1
+            print('Thanks for borrowing Maths Book.Kindly return by the designated time: ')
+            break
+        elif Subject_Book == "Science":
+             Number_Of_Science_Books = Number_Of_Science_Books -1 
+        print('Thanks for borrowing Science Book.Kindly return by the designated time: ')
+        break
+        elif Subject_Book == "English":
+                Number_Of_Englsih_Books = Number_Of_English_Books -1
+            print('Thanks for borrowing Science Book.Kindly return by the designated time: ')
+            break
+            print('We do not keep book for this subject.Kindly choose from Maths , Science or English')
+            elif Book_status == "Return":
+            Subject_Book = str(input('Which subject book would you like to Return: ')) 
+            if Book_status == "Maths":
+            Number_Of_Maths_Books = Number_Of_Maths_Books +1
+            print('Thanks for Returning Maths Book')
+            break
+            elif Subject_Book == "Science":
+                Number_Of_Science_Books = Number_Of_Science_Books +1 
+                print('Thanks for Returning Science Book')
+                break
+            if Book_status == "English": 
+                Number_Of_Englsih_Books = Number_Of_English_Books +1 
+                print('Thanks for Returning English Book')
+                break
+                print('We do not keep book for this subject.Kindly choose from Maths , Science or English')
+                print("Incorrect Username or Password. Please try again")
+                
